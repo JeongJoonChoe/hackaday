@@ -1,2 +1,2 @@
-# hackaday
+# Hackaday Projects
 Displays all of Hackaday's projects using the Hackaday API.
