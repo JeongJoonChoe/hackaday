@@ -1,0 +1,17 @@
+<% projects.forEach(function(project) { %>
+    <div class="project">
+        <img src="<%= project.image_url %>" alt="project image" class="project-image">
+        <div class="project-details">
+            <a href="http://localhost:3000/projects/<%= project.id %>">
+                <%= project.name %>
+            </a>
+            <p> <%= project.summary %></p>
+            <span class="user" id="<%= project.owner_id %>">View More Info.</span>
+            <div class="project-stats">
+                <span>Views: <%= project.views %></span> 
+                <span> Skulls: <%= project.skulls %></span> 
+                <span> Followers: <%= project.followers %></span>
+            </div>
+        </div>   
+    </div>
+<% }); %>

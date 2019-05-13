@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const projectRoute = require('./projectRoute.js');
+const userRoute = require('./userRoute.js');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -9,6 +10,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 
 app.use(['/projects', '/projects/', '/projects/:id', '/projects/page/:number'], projectRoute);
+app.use('/users/batch', userRoute);
 app.use(express.static(path.join(__dirname, '/../public/')));
 
 

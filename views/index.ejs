@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hackaday Projects</title>
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hackaday Projects</h1>
+    </header>
+    <main>
+        <div id="project-container">
+            <% projects.forEach(function(project) { %>
+                <div class="project">
+                    <img src="<%= project.image_url %>" alt="project image" class="project-image">
+                    <div class="project-details">
+                        <a href="http://localhost:3000/projects/<%= project.id %>">
+                            <%= project.name %>
+                        </a>
+                        <p> <%= project.summary %></p>
+                        <span class="user" id="<%= project.owner_id %>">View More Info.</span>
+                        <div class="project-stats">
+                            <span>Views: <%= project.views %></span> 
+                            <span> Skulls: <%= project.skulls %></span> 
+                            <span> Followers: <%= project.followers %></span>
+                        </div>
+                    </div>   
+                </div>
+                <% }); %>
+        </div>
+    </main>
+    <div class="button-container">
+        <input type="button" id="prev-button" value="< Prev">
+        <input type="button" id="next-button" value=" Next >">
+    </div>
+
+    <script src="../../ejs.min.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>
