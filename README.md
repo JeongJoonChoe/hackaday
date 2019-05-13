@@ -3,4 +3,4 @@ Displays all of Hackaday's projects using the Hackaday API.
 
 ##Demo
 
-![](https://gfycat.com/WhimsicalRevolvingAmericanriverotter.gif)
+![demo](https://gfycat.com/WhimsicalRevolvingAmericanriverotter.gif)
