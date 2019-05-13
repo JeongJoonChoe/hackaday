@@ -1,0 +1,24 @@
+{
+  "name": "hackaday",
+  "version": "1.0.0",
+  "description": "Displays all of Hackaday's projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeongJoonChoe/hackaday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeongJoonChoe/hackaday/issues"
+  },
+  "homepage": "https://github.com/JeongJoonChoe/hackaday#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
