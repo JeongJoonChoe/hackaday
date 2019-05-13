@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hackaday Projects</title>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hackaday Projects</h1>
+    </header>
+    <main>
+        <div class="project-item">
+            <h2 class="project-name"><%= project.name %></h2>
+            <img src="<%= project.image_url %>" alt="project image">
+            <p> <%= project.description %>
+            </p>
+            <div class="project-footer">
+                <div class="ratings-container">
+                    <span>Views: <%= project.views %></span>
+                    <span>Skulls: <%= project.skulls %></span>
+                    <span>Followers: <%= project.followers %></span>
+                </div>
+                <span><a href="<%= project.url %>">Check out this project</a></span>
+            </div>
+        </div>
+    </main>
+    <section>
+        <h2>Related Projects</h2>
+        <div class="related-container">
+            <% relatedProjects.forEach(function(project) { %>
+                <div class="project">
+                    <img src="<%= project.image_url %>" alt="project image" class="project-image">
+                    <div class="project-details">
+                        <a href="http://localhost:3000/projects/<%= project.id %>">
+                            <%= project.name %>
+                        </a>
+                        <p> <%= project.summary %></p>
+                        <span class="user" id="<%= project.owner_id %>">View More Info.</span>
+                        <div class="project-stats">
+                            <span>Views: <%= project.views %></span> 
+                            <span> Skulls: <%= project.skulls %></span> 
+                            <span> Followers: <%= project.followers %></span>
+                        </div>
+                    </div>   
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+</body>
+</html>
