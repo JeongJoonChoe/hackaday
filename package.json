@@ -4,7 +4,7 @@
   "description": "Displays all of Hackaday's projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nightwatch tests/productTest.js",
     "start": "nodemon server/server.js"
   },
   "repository": {
@@ -19,7 +19,12 @@
   "homepage": "https://github.com/JeongJoonChoe/hackaday#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "chromedriver": "^74.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chromedriver": "^74.0.0",
+    "nightwatch": "^1.0.19"
   }
 }
