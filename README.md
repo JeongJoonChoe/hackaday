@@ -5,5 +5,3 @@ Displays all of Hackaday's projects using the Hackaday API.
 
 ![Product Demo](https://i.imgflip.com/30vzlt.gif)
 
-<a href="https://imgflip.com/gif/30vzlt"><img src="https://i.imgflip.com/30vzlt.gif" title="made at imgflip.com"/></a>
-
