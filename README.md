@@ -3,6 +3,4 @@ Displays all of Hackaday's projects using the Hackaday API.
 
 ##Demo
 
-![Product Demo](https://i.imgflip.com/30vzlt.gif)
-
-<a href="https://i.imgflip.com/30vzlt.gif" width="200px"><a>
+<a href="https://imgflip.com/gif/30vzlt"><img src="https://i.imgflip.com/30vzlt.gif" title="made at imgflip.com" width="200px"/></a>
